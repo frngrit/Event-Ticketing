@@ -14,8 +14,8 @@ export default function NavBar() {
             lg:mx-auto
             md:mx-auto
             sm:mx-auto
-            sm:flex
-            md:flex
+            sm:hidden
+            md:hidden
             lg:flex
             rounded-xl
             w-3/4
@@ -30,11 +30,33 @@ export default function NavBar() {
                 <div
                 className='
                 flex
+                w-full
                 text-white
+                justify-between
                 '
                 >
-                    <a href= "https://arcticmonkeys.com"><img src={Logo} alt = "arctic-monkey-logo" className='h-12'/></a>
-                    <button href= "https://arcticmonkeys.com" className='ml-1 px-2 hover:bg-zinc-700 rounded-xl transition ease-in-out font-bold p-3'>ARCTIC MONKEYS</button>
+                    <div
+                    className='flex'
+                    >
+                        <a href= "https://arcticmonkeys.com"><img src={Logo} alt = "arctic-monkey-logo" className='h-12 hover:scale-125 duration-300 ease-in-out'/></a>
+                        <a href= "https://arcticmonkeys.com" className='ml-1 px-2 hover:bg-zinc-700 rounded-xl transition ease-in-out font-bold p-3'>ARCTIC MONKEYS</a>
+                    </div>
+                    <div
+                    className='
+                    flex
+                    space-x-6
+                    pt-2
+                    pr-4
+                    '
+                    >
+                        <a href='https://arcticmonkeys.com'>Schedule</a>
+                        <a href='https://arcticmonkeys.com'>Speakers</a>
+                        <a href='https://arcticmonkeys.com'>Ticked</a>
+                        <a href='https://arcticmonkeys.com'>Contact</a>
+                        <a className='border-2 py-1 px-5 rounded-xl hover:bg-white hover:text-slate-900 font-bold'
+                        href='https://arcticmonkeys.com'
+                        >Login</a>
+                    </div>
                 </div>
             </nav>
         </>

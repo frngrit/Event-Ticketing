@@ -10,7 +10,7 @@ export default function App() {
         className="
         bg-stone-900		
               "
-        style={{ height: "100vh" }}
+        style={{ height: "100%" }}
       >
         <div className='
                 lg:mx-15

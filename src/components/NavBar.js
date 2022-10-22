@@ -1,4 +1,5 @@
 import Logo from '../assets/arctic-monkeys-logo.png'
+import {Button} from '@mui/material'
 
 export default function NavBar() {
     return (
@@ -53,9 +54,7 @@ export default function NavBar() {
                         <a href='https://arcticmonkeys.com'>Speakers</a>
                         <a href='https://arcticmonkeys.com'>Ticked</a>
                         <a href='https://arcticmonkeys.com'>Contact</a>
-                        <a className='border-2 py-1 px-5 rounded-xl hover:bg-white hover:text-slate-900 font-bold'
-                        href='https://arcticmonkeys.com'
-                        >Login</a>
+                        <Button color="inherit" variant="outlined" size="large" sx={{marginTop:-2}}>Login</Button>
                     </div>
                 </div>
             </nav>

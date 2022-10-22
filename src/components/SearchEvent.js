@@ -16,21 +16,24 @@ export default function SearchEvent() {
         <>
             <div
                 className='
-        w-2/4
         flex
-        flex-col
-        mx-auto
-        rounded-lg
-        relative
-        -top-8
+        mx-0
+        w-full
+        lg:absolute
+        lg:top-[60vh]
+        lg:left-0
+        lg:right-0
+        lg:mx-auto
+        lg:rounded-lg
+        lg:w-3/4
         pt-9
         pb-4
         px-10
-        bg-indigo-900	
+        bg-zinc-700	
         transition
         ease-in-out
-        bg-opacity-70
-        hover:bg-opacity-90
+        bg-opacity-90
+        hover:bg-opacity-100
         z-10
         '
             >
@@ -38,7 +41,18 @@ export default function SearchEvent() {
                     className='w-full'
                 >
                     <div
-                        className='flex justify-between w-full'
+                        className='
+                        flex 
+                        mx-auto 
+                        xs:flex-col
+                        sm:flex-col
+                        md:flex-col
+                        lg:flex-row
+                        md:w-3/4
+                        lg:w-3/4 
+                        lg:space-x-[5vw]
+                        lg-max:space-y-4
+                        '
                     >
                         {searchInput.map((value, index) => {
                             return (
@@ -55,7 +69,7 @@ export default function SearchEvent() {
                         <TextField
                             id="standard-select-currency"
                             select
-                            label="Select"
+                            label="Time"
                             value={Time}
                             onChange={handleChange}
                             helperText="Please select the time you preferred"
@@ -69,7 +83,7 @@ export default function SearchEvent() {
                                 </MenuItem>
                             ))}
                         </TextField>
-                        <Button color="secondary" variant="outlined" size="large" sx={{marginBottom:3}}>Search</Button>
+                        <Button color="warning" variant="outlined" size="large" sx={{marginBottom:3}}>Search</Button>
                     </div>
                 </form>
             </div>

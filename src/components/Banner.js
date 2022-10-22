@@ -6,9 +6,6 @@ export default function Banner() {
     return (
         <>
             <div className='
-                lg:mx-15
-                md:mx-8
-                sm:mx-2
                 flex
                 '
             >
@@ -17,7 +14,7 @@ export default function Banner() {
                     // style={{backgroundImage: `url(${BannerPic})`,backgroundRepeat: "no-repeat",backgroundSize: "cover", height:"70vh"}}
                     className="
                     w-screen
-                    rounded-xl
+                    rounded-t-xl
                     object-cover
                     h-[70vh]
                     shadow-2xl

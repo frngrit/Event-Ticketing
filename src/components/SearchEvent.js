@@ -25,7 +25,7 @@ export default function SearchEvent() {
         lg:right-0
         lg:mx-auto
         lg:rounded-lg
-        lg:w-3/4
+        lg:w-3/5
         pt-9
         pb-4
         px-10

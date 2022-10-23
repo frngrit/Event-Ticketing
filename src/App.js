@@ -15,7 +15,7 @@ export default function App() {
         <div className='
                 lg:mx-15
                 md:mx-8
-                sm:mx-2
+                sm:mx-0
                 '
             >
         <NavBar />

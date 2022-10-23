@@ -23,3 +23,12 @@ code {
 .MuiFormHelperText-root {
   color: whitesmoke !important;
 }
+
+.css-pmfs16-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: rgb(249 115 22) !important;
+  font-weight: bolder !important;
+}
+
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid rgb(249 115 22) !important;
+}

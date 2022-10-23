@@ -22,6 +22,8 @@ export default function UpcomingEvents() {
             className='
             flex
             justify-between
+            items-center
+            xs:flex-col
             sm:flex-col
             md:flex-col
             lg:flex-col
@@ -34,6 +36,12 @@ export default function UpcomingEvents() {
                 <div
                 className='
                 flex
+                flex-col
+                items-center
+                sm:flex-col
+                md:flex-col
+                lg:flex-col
+                xl:flex-row
                 flex-wrap
                 '
                 >
